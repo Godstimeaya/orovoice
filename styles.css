@@ -24,6 +24,8 @@ body {
 	color: white;
 }
 
+
+
 /* Footer Section
 ********************************************************************* */
 footer {
@@ -64,39 +66,41 @@ body::before {
 	background-repeat: no-repeat;
 	background-position: center;
   }
+
 .topnav{
-background-color:red;
-overflow:hidden;
-width:100vw
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-ul{
-display:flex;
-}
-
-
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {
-    position: relative;
+	  overflow:hidden
   }
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+  
+.topnav a{
+font-size: 17px;
+display: block;
   }
-  .topnav.responsive a {
-    float: none;
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul a {
     display: block;
-    text-align: left;
-  }
+    background: #0d1317;
+    padding: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ad343e;
+	transition: color 2s ease,background 2s ease,padding 2s ease;
 }
+
+
+nav ul a:hover {
+    background: #474747;
+    color: #e0e0ce;
+    padding-left: 30px;
+}
+
+header > .wrapper > :first-child {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 20%;
+    flex: 1 0 20%;
+}
+
