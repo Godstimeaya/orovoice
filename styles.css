@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
 /* Media Queries: Tablet Landscape */
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 600px) {
     #primary { width:67%; }
     #secondary { width:30%; margin-left:3%;}  
 }
@@ -64,3 +64,11 @@ body::before {
 	background-repeat: no-repeat;
 	background-position: center;
   }
+.topnav{
+background-color:red;
+overflow:hidden;
+}
+.topnav a{
+float:right;
+display:block;
+}
