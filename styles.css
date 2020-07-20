@@ -1,8 +1,7 @@
-@import url("https://@media only screen and (max-width: 960px) {
-.header-menu-button {
-   color: #fff;
-   }
-}    #primary { width:67%; }
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 600px) {
+    #primary { width:67%; }
     #secondary { width:30%; margin-left:3%;}  
 }
 
@@ -49,18 +48,17 @@ body::before {
 	background-position: center;
   }
 
-.menu-mobile{
-	  float: right;
-  }
+  .menu-mobile {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    z-index: 2;
+}
   
 .menu-mobile a{
 font-size: 17px;
 display: block;
   }
-
-.dropdown-backdrop {
-    position: static;
-}
 
 .menu-mobile ul {
 	list-style-type: none;
@@ -93,7 +91,7 @@ header > .wrapper > :first-child {
     flex: 1 0 20%;
 }
 
-.menu-mobile {
+.menu-mobile-toggle {
     display: block;
     text-align: center;
     width: calc(6px * 4);
@@ -101,6 +99,9 @@ header > .wrapper > :first-child {
     right: 20px;
     position: absolute;
     z-index: 3;
+}
+.dropdown-backdrop {
+    position: static;
 }
 
 /* Footer Section
