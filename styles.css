@@ -24,25 +24,6 @@ body {
 	color: white;
 }
 
-
-
-/* Footer Section
-********************************************************************* */
-footer {
-	min-height: 120px;
-	padding: 40px 0 40px 0;
-	background: #e55d87;
-	background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
-	background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
-	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );
-	box-sizing: border-box;
-}
-footer p {
-	color: #FFFFFF;
-	margin: 20px 0 0 0;
-}
-
 img {
 	max-width: 100%;
 	height: auto;
@@ -67,91 +48,69 @@ body::before {
 	background-position: center;
   }
 
-
-// Navigation Variables
-$content-width: 1000px;
-$breakpoint: 799px;
-$nav-height: 70px;
-$nav-background: #262626;
-$nav-font-color: #ffffff;
-$link-hover-color: #2581DC;
-
-// Outer navigation wrapper
-.navigation {
-  height: $nav-height;
-  background: $nav-background;
-}
-
-// Logo and branding
-.brand {
-  position: absolute;
-  padding-left: 20px;
-  float: left;
-  line-height: $nav-height;
-  text-transform: uppercase;
-  font-size: 1.4em;
-  a,
-  a:visited {
-    color: $nav-font-color;
-    text-decoration: none;
+.menu-mobile{
+	  float: right;
   }
+  
+.menu-mobile a{
+font-size: 17px;
+display: block;
+  }
+
+.menu-mobile ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
 }
 
-// Container with no padding for navbar
-.nav-container {
-  max-width: $content-width;
-  margin: 0 auto;
+.menu-mobile ul a {
+    display: block;
+    background: #0d1317;
+    padding: 0 20px;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+	color: #ad343e;
+	transition: color 2s ease,background 2s ease,padding 2s ease;
 }
 
-// Navigation 
-nav {
-  float: right;
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li {
-      float: left;
-// Container with no padding for navbar
-.nav-container {
-  max-width: $content-width;
-  margin: 0 auto;
+
+.menu-mobile ul a:hover {
+    background: #474747;
+    color: #e0e0ce;
+	padding-left: 30px;
+	transition: color 2s ease,background 2s ease,padding 2s ease;
 }
 
-// Navigation 
-nav {
-  float: right;
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li {
-      float: left;
-      position: relative;
-      a,
-      a:visited {
-        display: block;
-        padding: 0 20px;
-        line-height: $nav-height;
-        background: $nav-background;
-        color: $nav-font-color;
-        text-decoration: none;
-        &:hover {
-          background: $link-hover-color;
-          color: $nav-font-color;
-        }
-        &:not(:only-child):after {
-          padding-left: 4px;
-          content: ' ▾';
-        }
-      } // Dropdown list
-      ul li {
-        min-width: 190px;
-        a {
-          padding: 15px;
-          line-height: 20px;
-            }
-        }
-      }
-    }
+header > .wrapper > :first-child {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 20%;
+    flex: 1 0 20%;
+}
+
+.menu-mobile {
+    display: block;
+    text-align: center;
+    width: calc(6px * 4);
+    height: calc(6px * 2.6);
+    right: 20px;
+    position: absolute;
+    z-index: 3;
+}
+
+/* Footer Section
+********************************************************************* */
+footer {
+	min-height: 120px;
+	padding: 40px 0 40px 0;
+	background: #e55d87;
+	background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+	background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );
+	box-sizing: border-box;
+}
+footer p {
+	color: #FFFFFF;
+	margin: 20px 0 0 0;
 }
