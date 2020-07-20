@@ -49,37 +49,11 @@ body::before {
   }
 
   .menu-mobile {
-	position:relative;
-	text-align:right;
-	width:100%;
-	z-index:2
-   }
-  
-
-.menu-mobile>* {
-	opacity:0;
-	-webkit-transform:translate3d(0,0,0);
-	transform:translate3d(0,0,0);
-	-webkit-transition:all .8s ease-out;
-	transition:all .8s ease-out
-   }
-  
-.menu-mobile.active {
-	visibility:visible;
-	width:100%;
-	-webkit-transition:all .8s ease-out;
-	transition:all .8s ease-out
-   }
-  
-
-.menu-mobile.active * {
-	opacity:1;
-	-webkit-transform:translate3d(0,0,0);
-	transform:translate3d(0,0,0);
-	-webkit-transition:all .3s ease;
-	transition:all .3s ease
-   }
-  
+    position: relative;
+    text-align: right;
+    width: 100%;
+    z-index: 2;
+}
   
 .menu-mobile a{
 font-size: 17px;
@@ -88,23 +62,28 @@ display: block;
 
 .menu-mobile ul {
 	list-style-type: none;
-    position: absolute;
-    display: none;
+	margin: 0px;
+	padding: 0px;
 }
 
-@media screen and (min-width:800px) {
 .menu-mobile ul a {
-	display: block;
+    display: block;
     background: #0d1317;
-    padding: 20px;
+    padding: 0 20px;
     font-size: 17px;
     text-decoration: none;
     text-transform: uppercase;
-	color: #ad343e;
-	visibility:visible
-    transition: color 2s ease,background 2s ease,padding 2s ease;
+    color: #ad343e;
+
 }
 
+
+.menu-mobile ul a:hover {
+    background: #474747;
+    color: #e0e0ce;
+    padding-left: 30px;
+    transition: color 2s ease,background 2s ease,padding 2s ease;
+}
 
 header > .wrapper > :first-child {
     -webkit-box-flex: 1;
@@ -134,7 +113,7 @@ footer {
 	background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
 	background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
 	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );
 	box-sizing: border-box;
 }
 footer p {
@@ -142,3 +121,9 @@ footer p {
 	margin: 20px 0 0 0;
 }
 
+.menu-mobile.active {
+	visibility:visible;
+	width:100%;
+	-webkit-transition:all .8s ease-out;
+	transition:all .8s ease-out
+   }
