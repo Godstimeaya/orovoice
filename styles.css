@@ -58,6 +58,10 @@ font-size: 17px;
 display: block;
   }
 
+.dropdown-backdrop {
+    position: static;
+}
+
 .menu-mobile ul {
 	list-style-type: none;
 	margin: 0px;
