@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
-/* Media Queries: Tablet Landscape */
-@media screen and (max-width: 600px) {
-    #primary { width:67%; }
+@import url("https://@media only screen and (max-width: 960px) {
+.header-menu-button {
+   color: #fff;
+   }
+}    #primary { width:67%; }
     #secondary { width:30%; margin-left:3%;}  
 }
 
