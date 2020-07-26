@@ -11,11 +11,8 @@
     #secondary { width:100%; margin:0; border:none; }
 }
 
-/* Base Styles
-********************************************************************* */
-html {
-	font-size: 62.5%;
-}
+
+
 body {
 	font-size: 1.5em;
 	line-height: 1.6;
@@ -24,12 +21,8 @@ body {
 	color: white;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
-}
 
-body::before {
+body::before { 
 	content: '';
 	position: fixed;
 	top: 0;
@@ -158,157 +151,55 @@ footer p {
 }
    #amp.amp-search:checked~.search {
 	display:block
-   }
-   #form-main{
-	width:100%;
-	float:left;
-	padding-top:0px;
-}
+  }
 
-#form-div {
-	background-color:rgba(231, 76, 60,0.9);
-	padding-left:35px;
-	padding-right:35px;
-	padding-top:35px;
-	padding-bottom:50px;
-	width: 450px;
-	float: left;
-	left: 50%;
-	position: absolute;
-  margin-top:10%;
-	margin-left: -20%;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
+  form{
+	  width: 500px;
+	  position: relative;
+	  margin: 15px auto;
+  }
+  input, textarea, button{
+	  font-size: 16px;
+	  border-radius: 0px;
+	  border: 1px solid var(--font-color);
+	  margin: 0px;
+	  width: 470px;
+	  padding: 5px 20px;
+  }
+input::placeholder, textarea::placeholder, #submit{
+	text-transform: uppercase;
+	font-size: 13px;
+	color: var(--secondary-color--);
 }
-
-.feedback-input {
-	color:#0493bd;
-	font-family: Helvetica, Arial, sans-serif;
+input{
+	border-bottom: none;
+	height: 40px;
+}
+textarea{
+	resize: none;
+	height: 100px;
+	padding-top: 20px;
+}
+input:hover, textarea:hover{
+	background-color: var(--font-color--);
+	color: var(--primary-color--);
+}
+input:hover::placeholder, 
+textarea:hover::placeholder{
+	color: white;
+}
+.submit {
+	display: inline-block;
 	font-size: 18px;
-	border-radius: 0;
-	vertical-align: middle;
-	background-color: #ecf0f1;
-	padding: 13px 13px 13px 54px;
-	margin-bottom: 10px;
-	width:100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-  border: 3px solid #bdc3c7;
-}
-
-.feedback-input:focus{
-	background: #ecf0f1;
-	box-shadow: 0;
-	border: 3px solid #3498db;
-	color: #3498db;
-	outline: none;
-  padding: 13px 13px 13px 54px;
-}
-
-.focused{
-	color:#30aed6;
-	border:#30aed6 solid 3px;
-}
-
-/* Icons ---------------------------------- */
-#name{
-	background-image: url(http://wpplus.me/wp-content/uploads/2013/08/head-32x32.png);
-	background-size: 32px 32px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-#name:focus{
-	background-image: url(http://wpplus.me/wp-content/uploads/2013/08/head-32x32.png);
-	background-size: 32px 32px;
-	background-position: 8px 5px;
-  background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-#email{
-	background-image: url(http://wpplus.me/wp-content/uploads/2013/08/envelope-32x32.png);
-	background-size: 32px 32px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-#email:focus{
-	background-image: url(http://wpplus.me/wp-content/uploads/2013/08/envelope-32x32.png);
-	background-size: 32px 32px;
-  background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-#comment{
-	background-image: url(http://wpplus.me/wp-content/uploads/2013/08/pencil-32x32.png);
-	background-size: 32px 32px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-textarea {
-	width: 100%;
-	height: 150px;
-	line-height: 150%;
-}
-
-input:hover, textarea:hover,
-input:focus, textarea:focus {
-	background-color:white;
-}
-
-#button-bottom{
-	font-family: webfontbold, Arial, Helvetica, sans-serif;
-	float:left;
-	width: 100%;
-	border: #fbfbfb solid 4px;
-	cursor:pointer;
-	background-color: rgba(9,179,116,0.9);
-	color:white;
-	font-size:24px;
-	padding-top:22px;
-	padding-bottom:22px;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-  margin-top:-4px;
-}
-
-#button-bottom:hover{
-	background-color: rgba(230, 126, 34,0.9);
-	color: rgba(52, 73, 94,0.9);
-}
+	font-weight: 700;
+	letter-spacing: 1px;
+	padding: 8px 48px;
+	margin-top: 32px;
+	border: 2px solid #75759E;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all ease .2s;
+	background-color: red;
 	
-.submit:hover{
-	color: rgba(149, 165, 166,0.9);
-}
-	
-.ease {
-	width: 0px;
-	height: 74px;
-	background-color: #fbfbfb;
-	-webkit-transition: .3s ease;
-	-moz-transition: .3s ease;
-	-o-transition: .3s ease;
-	-ms-transition: .3s ease;
-	transition: .3s ease;
 }
 
-.submit:hover .ease{
-  width:100%;
-  background-color:white;
-}
-
-@media only screen and (max-width: 580px) {
-	#form-div{
-		left: 3%;
-		margin-right: 3%;
-		width: 88%;
-		margin-left: 0;
-		padding-left: 3%;
-		padding-right: 3%;
-	}
-}
